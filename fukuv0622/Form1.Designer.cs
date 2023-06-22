@@ -36,16 +36,18 @@
             // 
             label1.AutoSize = true;
             label1.Location = new Point(0, 0);
+            label1.Margin = new Padding(8, 0, 8, 0);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(105, 45);
             label1.TabIndex = 0;
             label1.Text = "label1";
             // 
             // button1
             // 
-            button1.Location = new Point(12, 34);
+            button1.Location = new Point(31, 102);
+            button1.Margin = new Padding(8, 9, 8, 9);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(193, 69);
             button1.TabIndex = 1;
             button1.Text = "Avg";
             button1.UseVisualStyleBackColor = true;
@@ -53,11 +55,13 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(18F, 45F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(938, 399);
             Controls.Add(button1);
             Controls.Add(label1);
+            Font = new Font("Yu Gothic UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(8, 9, 8, 9);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);

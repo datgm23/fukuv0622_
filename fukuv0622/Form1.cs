@@ -3,7 +3,6 @@ namespace fukuv0622
     public partial class Form1 : Form
     {
         static Random rand = new Random();
-
         public Form1()
         {
             InitializeComponent();
@@ -15,14 +14,14 @@ namespace fukuv0622
             label1.Text = "";
             int sum = 0;
 
-            for (int i=0;i<10;i++)
+            for (int i = 0; i < 10; i++)
             {
                 data[i] = rand.Next(101);
                 label1.Text += $"{data[i]}, ";
                 sum += data[i];
             }
 
-            MessageBox.Show($"{sum/10}");
+            MessageBox.Show($"{sum / 10}");
         }
     }
 }
